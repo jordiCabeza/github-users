@@ -1,0 +1,1 @@
+module.exports = require("npm:crossroads@0.12.2/dist/crossroads.js");

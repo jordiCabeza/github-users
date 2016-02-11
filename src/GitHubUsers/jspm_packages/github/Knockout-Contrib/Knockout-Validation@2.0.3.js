@@ -1,0 +1,1 @@
+module.exports = require("github:Knockout-Contrib/Knockout-Validation@2.0.3/dist/knockout.validation");

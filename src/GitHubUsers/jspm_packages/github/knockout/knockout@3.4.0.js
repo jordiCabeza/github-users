@@ -1,0 +1,1 @@
+module.exports = require("github:knockout/knockout@3.4.0/dist/knockout.debug");

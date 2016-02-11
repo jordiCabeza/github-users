@@ -1,0 +1,1 @@
+module.exports = require("npm:hasher@1.2.0/dist/js/hasher.js");

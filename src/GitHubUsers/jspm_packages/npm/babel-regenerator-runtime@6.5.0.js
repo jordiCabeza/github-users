@@ -1,0 +1,1 @@
+module.exports = require("npm:babel-regenerator-runtime@6.5.0/runtime.js");

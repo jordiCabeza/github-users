@@ -1,0 +1,8 @@
+MultipleErrors: C:/Users/jclopez/AppData/Local/.jspm/packages/npm/hasher@1.2.0/dev/build/jsdoc-toolkit/app/test/lend.js:19:8: Unexpected reserved word function
+C:/Users/jclopez/AppData/Local/.jspm/packages/npm/hasher@1.2.0/dev/build/jsdoc-toolkit/app/test/lend.js:19:23: Semi-colon expected
+C:/Users/jclopez/AppData/Local/.jspm/packages/npm/hasher@1.2.0/dev/build/jsdoc-toolkit/app/test/lend.js:25:12: Unexpected reserved word function
+C:/Users/jclopez/AppData/Local/.jspm/packages/npm/hasher@1.2.0/dev/build/jsdoc-toolkit/app/test/lend.js:25:20: Unexpected token )
+C:/Users/jclopez/AppData/Local/.jspm/packages/npm/hasher@1.2.0/dev/build/jsdoc-toolkit/app/test/lend.js:25:23: Semi-colon expected
+C:/Users/jclopez/AppData/Local/.jspm/packages/npm/hasher@1.2.0/dev/build/jsdoc-toolkit/app/test/lend.js:31:9: Unexpected reserved word function
+C:/Users/jclopez/AppData/Local/.jspm/packages/npm/hasher@1.2.0/dev/build/jsdoc-toolkit/app/test/lend.js:31:17: Unexpected token )
+C:/Users/jclopez/AppData/Local/.jspm/packages/npm/hasher@1.2.0/dev/build/jsdoc-toolkit/app/test/lend.js:31:20: Semi-colon expected
