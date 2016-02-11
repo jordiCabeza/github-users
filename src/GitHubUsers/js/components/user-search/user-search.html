@@ -1,0 +1,50 @@
+﻿<div class="row user-search">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Entear a github username..." data-bind="value : username">
+            <span class="input-group-btn">
+                <button class="btn btn-primary" type="button" data-bind="click : search">Search</button>
+            </span>
+        </div>
+    </div>
+</div>
+
+<!-- ko if: user -->
+<div class="panel panel-default">
+    <div class="panel-body">
+        <div class="row" data-bind="with: user">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                <h1 class="text-center" data-bind="text: name"></h1>
+                <h2 class="text-center" data-bind="text: username"></h2>
+                <h3 class="text-center">
+                    <span class=" glyphicon glyphicon-map-marker" aria-hidden="true">
+                    </span>
+                    <span data-bind="text: location"></span>
+                </h3>
+                <br/>
+                <div class="panel panel-default">
+                    <!-- Default panel contents -->
+                    <div class="panel-heading"><h4>Popular respositories</h4></div>
+                    <ul class="list-group" data-bind="foreach : repositories">
+                        <li class="list-group-item">
+                            <strong><a data-bind="text: name, attribute : { href : url }"></a></strong>
+                            <div class="pull-right">
+                                <span data-bind="text: stars"></span>
+                                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 block-center">
+                <img class="img-responsive" data-bind="attr : { src : avatarUrl }" />
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /ko -->
+
+<!-- ko if: error -->
+    <h4 class="bg-danger text-center error-message">User not found.</h4>
+<!-- /ko -->

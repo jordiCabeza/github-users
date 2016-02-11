@@ -1,0 +1,49 @@
+﻿<h1>About</h1>
+<p class="lead">GitHub User Search consist in an .NET MVC5 application that loads a SPA that communicates with Web API 2 services</p>
+
+<h2>Backend</h2>
+
+<h3>MVC5</h3>
+<p>The MVC5 applications contains the HomeController with and index action to load the html needed to run the SPA.</p>
+<p>We are not using Nuget to handle any frontend dependencies and for simplicity there is no unit test for the HomeController.</p>
+<p>We are also using default RouteConfig.</p>
+
+<h3>Web API 2</h3>
+<p>For the Web API 2 services we are using:</p>
+<ul>
+    <li>StructureMap as IoC/DI</li>        
+    <li>UnitTests project using NUnit as a unit testing framework and Moq as a mocking framework</li>
+</ul>
+
+<h2>Frontend</h2>
+
+The frontend consist in a SPA build using the following technologies:
+<ul>
+    <li>
+        Using npm and jspm as a packet managers. Npm to handle dev dependencies like gulp(javascript task runner), karma(test runner) and jspm (frontend package manager).
+        Jspm is use to install the needed packages (Knockout, Bootstrap, etc,..) and create the config for the SystemJS module loader.
+        Both npm and jspm packages are not included in the zip.
+    </li>
+    <li>Use SystemJS module loader to load ES2015 modules and use babel to transpile the code to ES5 for compatibility with all browsers.</li>
+    <li>Knockout as a MVVM framework to connect the UI with the data models. We are using knockout components to have a clean and organized code separating each teamplate in an .html file and the viewModel in a .js. You can find the components inside the folder /js/components.</li>
+    <li>Code divided in ES2015 modules that facilitates the testing.</li>
+    <li>Use karma to run the units test written in jasmine. The spec files are hosted in the same folder than the source code for simplicity</li>
+</ul>
+
+<h3>How to run unit tests</h3>
+
+<p>
+    Install nodejs and npm in your machine.
+    <a hrer="https://docs.npmjs.com/getting-started/installing-node">https://docs.npmjs.com/getting-started/installing-node</a>
+</p>
+
+<p>Install gulp and jspm as a global package</p>
+<pre>npm install -g gulp jspm</pre>
+
+<p>Open a console and inside the "Calculator" project folder install npm packages</p>
+<pre>npm install</pre>
+<p>Install jspm packages</p>
+<pre>jspm install</pre>
+<p>Finally, run gulp task to run the unit tests with karma</p>
+<pre>gulp karma</pre>
+
